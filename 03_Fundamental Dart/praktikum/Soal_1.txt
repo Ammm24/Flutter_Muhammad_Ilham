@@ -1,1 +1,64 @@
+1. Buatlah rumus keliling dan luas persegi dan persegi panjang dengan menggunakan bahasa pemrograman Dart
+Jawaban : 
+// Menghitung keliling dan luas persegi
+double hitungKelilingPersegi(double sisi) {
+  return 4 * sisi;
+}
+
+double hitungLuasPersegi(double sisi) {
+  return sisi * sisi;
+}
+
+// Menghitung keliling dan luas persegi panjang
+double hitungKelilingPersegiPanjang(double panjang, double lebar) {
+  return 2 * (panjang + lebar);
+}
+
+double hitungLuasPersegiPanjang(double panjang, double lebar) {
+  return panjang * lebar;
+}
+
+void main() {
+  double sisiPersegi = 5.0;
+  double panjangPersegiPanjang = 7.0;
+  double lebarPersegiPanjang = 3.0;
+
+  double kelilingPersegi = hitungKelilingPersegi(sisiPersegi);
+  double luasPersegi = hitungLuasPersegi(sisiPersegi);
+
+  double kelilingPersegiPanjang = hitungKelilingPersegiPanjang(panjangPersegiPanjang, lebarPersegiPanjang);
+  double luasPersegiPanjang = hitungLuasPersegiPanjang(panjangPersegiPanjang, lebarPersegiPanjang);
+
+  print("Persegi:");
+  print("Keliling: $kelilingPersegi");
+  print("Luas: $luasPersegi");
+
+  print("\nPersegi Panjang:");
+  print("Keliling: $kelilingPersegiPanjang");
+  print("Luas: $luasPersegiPanjang");
+}
+
+2. Implementasikan rumus keliling dan luas dari Lingkaran dengan menggunakan Bahasa Dart 
+Jawaban : 
+import 'dart:math';
+
+// Menghitung keliling dan luas lingkaran
+double hitungKelilingLingkaran(double jariJari) {
+  return 2 * pi * jariJari;
+}
+
+double hitungLuasLingkaran(double jariJari) {
+  return pi * jariJari * jariJari;
+}
+
+void main() {
+  double jariJariLingkaran = 5.0;
+
+  double kelilingLingkaran = hitungKelilingLingkaran(jariJariLingkaran);
+  double luasLingkaran = hitungLuasLingkaran(jariJariLingkaran);
+
+  print("Lingkaran:");
+  print("Keliling: $kelilingLingkaran");
+  print("Luas: $luasLingkaran");
+}
 

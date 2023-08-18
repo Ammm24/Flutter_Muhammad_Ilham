@@ -1,0 +1,30 @@
+1. Buat 3 buah variabel yang menampung tipe data String, lalu sambungkan 3 variabel tersebut dan tampilkan pada layar.
+Jawaban : 
+void main() {
+  String variabel1 = "Hai";
+  String variabel2 = " ";
+  String variabel3 = "Ilham";
+
+  String hasilGabungan = variabel1 + variabel2 + variabel3;
+
+  print(hasilGabungan);
+}
+
+2. Implementasikan rumus volume dari tabung (silinder) dengan menggunakan Bahasa Dart.
+Jawaban :
+import 'dart:math';
+
+// Menghitung volume tabung (silinder)
+double hitungVolumeTabung(double jariJari, double tinggi) {
+  return pi * jariJari * jariJari * tinggi;
+}
+
+void main() {
+  double jariJariTabung = 3.0;
+  double tinggiTabung = 8.0;
+
+  double volumeTabung = hitungVolumeTabung(jariJariTabung, tinggiTabung);
+
+  print("Tabung (Silinder):");
+  print("Volume: $volumeTabung");
+}
