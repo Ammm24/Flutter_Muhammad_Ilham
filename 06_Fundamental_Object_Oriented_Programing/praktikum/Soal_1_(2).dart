@@ -4,7 +4,10 @@ class Mobil {
   double beratKosong;
   List<Muatan> muatan;
 
-  Mobil({required this.merk, required this.model, required this.beratKosong});
+  Mobil({required this.merk, required this.model, required this.beratKosong}) {
+    // TODO: implement Mobil
+    throw UnimplementedError();
+  }
 
   // Method untuk menghitung total muatan
   double totalMuatan() {
