@@ -1,4 +1,4 @@
-## ASYNC * AWAIT ###
+## ASYNC & AWAIT ###
 Async dan await adalah dua kata kunci dalam bahasa pemrograman Dart yang digunakan untuk melakukan pemrograman asinkron. Pemrograman asinkron adalah pemrograman yang memungkinkan sebuah program untuk melakukan beberapa tugas secara bersamaan.
 
 Pada Flutter, async dan await digunakan untuk mengakses API web, membaca atau menulis data dari file, atau melakukan tugas-tugas lain yang membutuhkan waktu untuk diselesaikan.
