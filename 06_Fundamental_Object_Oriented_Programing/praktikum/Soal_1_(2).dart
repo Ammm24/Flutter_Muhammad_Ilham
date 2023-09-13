@@ -1,39 +1,14 @@
-class Mobil {
-  String merk;
-  String model;
-  double beratKosong;
-  List<Muatan> muatan;
-
-  Mobil({required this.merk, required this.model, required this.beratKosong}) {
-    // TODO: implement Mobil
-    throw UnimplementedError();
-  }
-
-  // Method untuk menghitung total muatan
-  double totalMuatan() {
-    double total = 0;
-    for (Muatan muatan in muatan) {
-      total += muatan.berat;
-    }
-    return total;
-  }
-}
-
-class Muatan {
+class Hewan {
+  String nama;
   double berat;
 
-  Muatan({required this.berat});
-}
+  String property;
+  double kapasitas;
 
-void main() {
-  // Membuat objek Mobil
-  Mobil mobil =
-      Mobil(merk: "Toyota", model: "Kijang Innova", beratKosong: 1.500);
-
-  // Menambahkan muatan
-  mobil.muatan.add(Muatan(berat: 100));
-  mobil.muatan.add(Muatan(berat: 200));
-
-  // Mencetak total muatan
-  print("Total muatan: ${mobil.totalMuatan()} kg");
+  Hewan({
+    required this.nama,
+    required this.berat,
+    required this.property,
+    required this.kapasitas,
+  });
 }
