@@ -1,0 +1,4 @@
+Buatlah sebuah project flutter (jika flutter berhasil dibuat tapi masih belum bisa tampil, maka masuk ke nilai prioritas 1) 
+
+jawab
+di screenshoot

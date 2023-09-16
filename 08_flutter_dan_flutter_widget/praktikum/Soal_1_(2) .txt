@@ -1,0 +1,4 @@
+Tampilkan informasi software yang dibutuhkan oleh Flutter dengan menggunakan perintah Flutter doctor! lalu screenshot
+
+jawab
+Di screenshot
