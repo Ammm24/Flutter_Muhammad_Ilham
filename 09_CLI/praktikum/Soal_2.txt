@@ -1,12 +1,4 @@
-1.  Cari dan tuliskan 5 aplikasi yang berjalan pada sistem operasi IOS namun tidak pada sistem operasi Android
-Jawaban :
-A. GarageBand adalah Aplikasi produksi musik dan pembuatan suara yang dikembangkan oleh Apple. Awalnya dirilis untuk macOS, dan kemudian diporting ke iOS.
-B. iMovie adalah Aplikasi penyuntingan video yang dirancang khusus untuk perangkat Apple.
-C. Final Cut Pro X adalah Ini adalah perangkat lunak profesional penyuntingan video yang dikembangkan oleh Apple untuk pengguna macOS dan iOS.
-D. Logic Pro X adalah Aplikasi produksi musik yang kuat untuk macOS dan iOS.
-E. Clips: Aplikasi media sosial yang memungkinkan pengguna untuk membuat video pendek dengan efek khusus, teks, dan musik latar
+Modifikasi project yang telah kalian buat sehingga mengubah Appbar dengan tulisan “Halo Alterra” dan di halaman bodynya berisi tulisan “Nama saya adalah (NamaKalian)”
 
-2. Cari 2 buah software yang dapat berjalan pada platform website dan juga Desktop
-Jawaban :
-A. Microsoft Office 365 (Office Online dan Desktop Apps)
-B. Github
+jawab
+discreenshoot
