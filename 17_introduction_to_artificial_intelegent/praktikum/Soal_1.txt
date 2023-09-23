@@ -1,0 +1,15 @@
+1. Tuliskan 5 bahasa pemrograman untuk membuat aplikasi Mobile(contoh: C# untuk Desktop Windows)
+Jawaban : 
+A.Swift adalah Bahasa pemrograman resmi yang digunakan untuk pengembangan aplikasi iOS. 
+B.Kotlin adalah Bahasa pemrograman modern yang dapat digunakan untuk mengembangkan aplikasi Android.
+C.java adalah Bahasa pemrograman yang telah lama digunakan untuk mengembangkan aplikasi Android. Meskipun Kotlin menjadi lebih populer, Java masih banyak digunakan dalam pengembangan aplikasi Android.
+D.Dart adalah Bahasa pemrograman yang digunakan dalam kerangka kerja Flutter untuk membuat aplikasi mobile lintas platform
+E.React Native adalah kerangka kerja JavaScript yang memungkinkan pengembangan aplikasi mobile lintas platform dengan menggunakan kode JavaScript.
+
+2. Cari dan tuliskan 5 aplikasi yang berjalan pada sistem operasi Android namun tidak pada sistem operasi iOS :
+Jawaban : 
+A. Tasker adalah aplikasi otomatisasi yang kuat untuk Android, yang memungkinkan pengguna untuk membuat tugas otomatis berdasarkan berbagai kondisi dan pemicu. 
+B. Popcorn Time adalah aplikasi streaming video yang terkenal untuk Android, yang memungkinkan pengguna untuk menonton film dan acara TV secara gratis.
+C. ES File Explorer adalah aplikasi manajemen file yang populer di Android, tetapi tidak tersedia di iOS.
+D. WiFiKill adalah aplikasi Android yang memungkinkan pengguna untuk memutuskan koneksi WiFi perangkat lain yang terhubung ke jaringan yang sama.
+E. Lucky Patcher adalah aplikasi yang dapat mengubah dan memodifikasi aplikasi Android, termasuk fitur seperti pembelian dalam aplikasi dan iklan. 
