@@ -1,28 +1,14 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(title: 'MaterialApp'),
-    );
-  }
+  runApp(MyHomePage(
+    title: '',
+  ));
 }
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
+
   final String title;
 
   @override
@@ -30,61 +16,79 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int counter = 0;
-
-  void incrementCounter() {
-    setState(() {
-      counter++;
-    });
-  }
+  final List<String> images = [
+    "assets/Alterra.png",
+    "assets/Uciha.png",
+  ];
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xff393E46),
-      appBar: AppBar(
-        iconTheme: const IconThemeData(
-          size: 40, //change size on your need
-          color: Colors.white, //change color on your need
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          title: Text(widget.title),
         ),
-        backgroundColor: const Color(0xFF222831),
-        title: Text(
-          widget.title,
-          style: const TextStyle(color: Colors.white),
-        ),
-      ),
-      //Tugas Nomor 10
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.only(left: 20),
+        // ignore: avoid_unnecessary_containers
+        body: Container(
           child: Column(
-            children: <Widget>[
-              // Text(
-              //   'This is Materiall App',
-              //   style: TextStyle(color: Colors.white),
-              // ),
-              const SizedBox(
-                height: 40,
+            children: [
+              // Welcome section
+              const Padding(
+                padding: EdgeInsets.all(10.90),
+                child: Text(
+                  'Welcome to MyApp!',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
-              ListView.builder(
+              // Galeri gambar
+              GridView.builder(
                 shrinkWrap: true,
-                itemCount: 5,
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                ),
+                itemCount: images.length,
                 itemBuilder: (context, index) {
-                  return const ListTile(
-                    leading: CircleAvatar(
-                      child: Text(
-                        "L",
-                        style: TextStyle(color: Colors.white),
-                      ),
-                      backgroundColor: Colors.green,
-                    ),
-                    title: Text(
-                      "dfsdfsd",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                    subtitle: Text(
-                      "fdsfsdf",
-                      style: TextStyle(color: Colors.white),
+                  return GestureDetector(
+                    onTap: () {
+                      // Tampilkan gambar pada bottomsheet
+                      showModalBottomSheet(
+                        context: context,
+                        // ignore: avoid_unnecessary_containers
+                        builder: (context) => Container(
+                          child: Image.network(images[index]),
+                        ),
+                      );
+
+                      // Tampilkan gambar pada dialog saat ditekan
+                      showDialog(
+                        context: context,
+                        builder: (context) => AlertDialog(
+                          title: Text('Tampilkan Gambar'),
+                          content: Image.network(images[index]),
+                          actions: [
+                            TextButton(
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                              child: Text('Tidak'),
+                            ),
+                            TextButton(
+                              onPressed: () {
+                                // Buka halaman baru
+                                Navigator.pushNamed(context, '/halaman-baru');
+                              },
+                              child: Text('Ya'),
+                            ),
+                          ],
+                        ),
+                      );
+                    },
+                    child: Card(
+                      child: Image.network(images[index]),
                     ),
                   );
                 },
@@ -92,47 +96,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         ),
-      ),
-      //Tugas nomor 10
-      drawer: const Drawer(
-        backgroundColor: Color(0xFF222831),
-        child: Padding(
-          padding: EdgeInsets.only(
-            left: 26,
-            top: 46,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Home",
-                style: TextStyle(
-                  color: Colors.white,
-                ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Text("Setting", style: TextStyle(color: Colors.white)),
-            ],
-          ),
-        ),
-      ),
-      // Tugas Nomor 10
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: const Color(0xff393E46),
-        selectedItemColor: Colors.green,
-        unselectedItemColor: Colors.white,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Setting',
-          ),
-        ],
       ),
     );
   }
