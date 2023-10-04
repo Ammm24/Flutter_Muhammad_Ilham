@@ -13,17 +13,22 @@ Untuk menambahkan aset ke folder assets, cukup pindahkan file ke folder tersebut
 Menambahkan aset ke file pubspec.yaml
 
 Untuk menambahkan aset ke file pubspec.yaml, tambahkan entri assets ke file tersebut. Misalnya, untuk menambahkan gambar myimage.png, Anda dapat menambahkan entri berikut ke file pubspec.yaml:
-` assets:
-  - assets/myimage.png `
+``` javascript
+ assets:
+  - assets/myimage.png
+```
 
 Menampilkan aset di aplikasi Flutter
 
 Setelah menambahkan aset ke proyek Flutter, Anda dapat menampilkannya di aplikasi Anda menggunakan widget Image. Misalnya, untuk menampilkan gambar myimage.png, Anda dapat menggunakan kode berikut:
 
 Dart
-` Image(
+
+```javascript
+ Image(
   image: AssetImage('assets/myimage.png'),
-) `
+)
+```
 
 Jenis-jenis aset Flutter
 
