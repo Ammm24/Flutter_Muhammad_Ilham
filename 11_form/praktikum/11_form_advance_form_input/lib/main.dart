@@ -30,27 +30,19 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff393E46),
+      backgroundColor: const Color(0xff393E46),
       appBar: AppBar(
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           size: 40, //change size on your need
           color: Colors.white, //change color on your need
         ),
-        backgroundColor: Color(0xFF222831),
+        backgroundColor: const Color(0xFF222831),
         title: Text(
           widget.title,
-          style: TextStyle(color: Colors.white),
+          style: const TextStyle(color: Colors.white),
         ),
       ),
       //Tugas Nomor 10
@@ -63,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
               //   'This is Materiall App',
               //   style: TextStyle(color: Colors.white),
               // ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               ListView.builder(
@@ -120,7 +112,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       // Tugas Nomor 10
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color(0xff393E46),
+        backgroundColor: const Color(0xff393E46),
         selectedItemColor: Colors.green,
         unselectedItemColor: Colors.white,
         items: const <BottomNavigationBarItem>[

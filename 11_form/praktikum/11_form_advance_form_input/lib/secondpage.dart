@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 
 class SecondPage extends StatefulWidget {
   const SecondPage({super.key});
@@ -25,8 +24,8 @@ class _SecondPageState extends State<SecondPage> {
       RegExp(r"^(\+62|62)?[\s-]?0?8[1-9]{1}\d{1}[\s-]?\d{4}[\s-]?\d{2,5}$");
 
   // create some values
-  Color pickerColor = Color(0xff443a49);
-  Color currentColor = Color(0xff443a49);
+  Color pickerColor = const Color(0xff443a49);
+  Color currentColor = const Color(0xff443a49);
 
 // ValueChanged<Color> callback
   void changeColor(Color color) {
@@ -51,7 +50,7 @@ class _SecondPageState extends State<SecondPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Contacts"),
+        title: const Text("Contacts"),
       ),
       body: SingleChildScrollView(
         child: Form(
@@ -165,7 +164,7 @@ class _SecondPageState extends State<SecondPage> {
                   children: [
                     ElevatedButton(
                       onPressed: _openFileExplorer,
-                      child: Text("Pick File"),
+                      child: const Text("Pick File"),
                     ),
                   ],
                 ),
@@ -188,7 +187,7 @@ class _SecondPageState extends State<SecondPage> {
                       backgroundColor: Colors.purple,
                       child: Text(
                         "${data['title']?[0]}",
-                        style: TextStyle(color: Colors.white),
+                        style: const TextStyle(color: Colors.white),
                       ),
                     ),
                     title: Text("${data['title']}"),
@@ -205,7 +204,7 @@ class _SecondPageState extends State<SecondPage> {
                               });
                             },
                             child: const Icon(Icons.edit)),
-                        SizedBox(width: 16),
+                        const SizedBox(width: 16),
                         GestureDetector(
                             onTap: () {
                               deleteContact(index);
