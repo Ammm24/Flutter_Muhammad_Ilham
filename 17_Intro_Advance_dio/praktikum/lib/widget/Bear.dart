@@ -33,17 +33,14 @@ class _MyAppState extends State<DiceBear> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'DiceBear API Demo',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('DiceBear API Demo'),
-        ),
-        body: Center(
-          child: _imageUrl.isNotEmpty
-              ? Image.network(_imageUrl)
-              : const CircularProgressIndicator(),
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('DiceBear API Demo'),
+      ),
+      body: Center(
+        child: _imageUrl.isNotEmpty
+            ? Image.network(_imageUrl)
+            : const CircularProgressIndicator(),
       ),
     );
   }

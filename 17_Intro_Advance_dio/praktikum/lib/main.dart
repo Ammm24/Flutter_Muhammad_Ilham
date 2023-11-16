@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:praktikum/widget/Bear.dart';
+import 'package:praktikum/base_page.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Danusan HMIF',
-      home: DiceBear(),
+      home: BasePage(),
     );
   }
 }
